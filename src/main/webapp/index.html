@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <script src="js/main.js" defer></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>TalkHub</h1>
+        <nav>
+            <a href="about.html" class="navButtons"><img src="./images/home.png" alt="About"></a>
+            <a  class="navButtons" onclick=""><img src="./images/chat.png" alt="Video Chat"></a>
+            <a href="video.html" class="navButtons"><img src="./images/video.png" alt="Video Chat"></a>
+        </nav>
+        <a href="#" class="navButtons" id="gitIcon"><img src="./images/github.png" alt="Video Chat"></a>
+    </header>
+
+
+
+<div id="room-list">
+    <h2>Chat Rooms</h2>
+    <ul id="roomCodes">
+    </ul>
+    <div id="bottomButtons">
+        <button id="newRoom" onclick="newRoom()">Generate and Join New Room</button>
+        <button id="refreshRooms">Refresh Room List</button>
+    </div>
+    <div id="newManualRoom">
+        <input type="text" id="code" placeholder="Enter Your Room Code">
+        <button id="btRoom" onclick="newRoomManual()">Join New Room</button>
+    </div>
+</div>
+
+<div id="chat-container">
+    <textarea title="Chat Log" id="log" readonly></textarea>
+
+    <div class="input-container">
+        <input title="Chat Input" id="input" type="text" placeholder="Send A Message">
+        <button id="sendMessageButton" onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="room-management">
+        <div style="margin-left: 10px;">Current Room: <span id="currentRoom"></span></div>
+    </div>
+</div>
+
+</body>
+</html>

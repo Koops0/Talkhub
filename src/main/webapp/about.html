@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #mainSec
+        {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            margin-left: 10%;
+        }
+        .member-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .member-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .member {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .member h3 {
+            margin-bottom: 10px;
+        }
+
+        .member a {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .member a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #overview {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        #overview h2 {
+            margin-bottom: 20px;
+        }
+
+        #overview p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        .social-links a:last-child img {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TalkHub</h1>
+    <nav>
+        <a class="navButtons"><img src="./images/home.png" alt="About"></a>
+        <a href="http://localhost:8080/WSChatServer-1.0-SNAPSHOT/" class="navButtons" onclick=""><img src="./images/chat.png" alt="Video Chat"></a>
+        <a href="#" class="navButtons" onclick=""><img src="./images/video.png" alt="Video Chat"></a>
+    </nav>
+    <a href="#" class="navButtons" style="margin-top:290%;"><img src="./images/github.png" alt="GitHub"></a>
+</header>
+
+<div id="mainSec">
+    <section id="team-members">
+        <h2 style="margin-left: 30px;">Meet Our Team</h2>
+        <div class="members-container">
+            <div class="member">
+                <img src="images/mujtaba.png" alt="Mujtaba">
+                <h3>Mujtaba Chaudhry</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mujtaba-chaudhry/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/mujtabach2" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/kersh.jpeg" alt="Kershan">
+                <h3>Kershan Arulneswaran</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kersharul/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Koops0" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/haider.jpeg" alt="Haider">
+                <h3>Haider Saleem</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/haider42/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Haider425" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/simon.jpeg" alt="Simon">
+                <h3>Simon Berhe</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/simon-berhe/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/SimonB0525" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview">
+        <h2>Project Overview</h2>
+        <p>TalkHub is a web chat server built using Java Web Application project. It employs WebSockets along with HTML, CSS, and JavaScript. The core functionality includes:</p>
+        <ul>
+            <li>Multiple chat rooms where users can send messages to others in the same room.</li>
+            <li>Dynamic room creation with random alphanumeric codes.</li>
+            <li>User authentication with usernames.</li>
+            <li>Real-time user greetings and notifications when new users join a room.</li>
+            <li>Timestamped chat messages.</li>
+            <li>Simple UI with the ability to join existing rooms, create new rooms, and send messages.</li>
+            <li>Features such as a list of current chat rooms and message sending via <kbd>Enter</kbd> key and "send" button.</li>
+        </ul>
+        <p>The project aims for a user-friendly interface with room for additional interactions and improvements beyond the basic requirements.</p>
+    </section>
+
+</div>
+</body>
+</html>
